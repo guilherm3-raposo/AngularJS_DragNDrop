@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DragNDrop Example</title>
+    <script src="../../lib/angular.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/DragNDrop.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body ng-app="App" ng-controller="Root">
+    <ul id="list" class="list" list-drag model="dataset">
+        <li ng-repeat="data in dataset" class="list-item">{{data.name}}</li>
+    </ul>
+</body>
+
+</html>
